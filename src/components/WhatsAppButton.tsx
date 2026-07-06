@@ -47,7 +47,7 @@ const WhatsAppButton: React.FC = () => {
             </div>
 
             <a
-              href="https://wa.me/923001234567?text=Hi%20Tech-Trends!%20I%20need%20help%20with%20my%20order."
+              href="https://wa.me/923232255520?text=Hi%20Tech-Trends!%20I%20need%20help%20with%20my%20order."
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-2.5 bg-green-500 hover:bg-green-600 text-white font-semibold rounded-xl text-sm transition-colors"
@@ -63,7 +63,7 @@ const WhatsAppButton: React.FC = () => {
         onClick={() => setShowTooltip(v => !v)}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="w-14 h-14 bg-green-500 hover:bg-green-600 text-white rounded-full flex items-center justify-center shadow-lg shadow-green-500/40 animate-pulse-whatsapp transition-colors"
+        className="w-14 h-14 bg-amber-400 hover:bg-amber-300 text-slate-950 rounded-full flex items-center justify-center shadow-lg shadow-amber-500/30 animate-pulse-whatsapp transition-colors"
         aria-label="Chat on WhatsApp"
       >
         {showTooltip ? (

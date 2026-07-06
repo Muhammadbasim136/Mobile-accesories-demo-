@@ -47,7 +47,7 @@ const Testimonials: React.FC = () => {
   const visibleItems = testimonials.slice(current, current + itemsPerView);
 
   return (
-    <section className="py-14 sm:py-20 bg-gradient-to-br from-indigo-50 via-white to-blue-50">
+    <section className="py-14 sm:py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-amber-950">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -57,13 +57,13 @@ const Testimonials: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10 sm:mb-12"
         >
-          <span className="inline-block text-indigo-600 font-semibold text-sm uppercase tracking-widest mb-2">
+          <span className="inline-block text-amber-300 font-semibold text-sm uppercase tracking-widest mb-2">
             ⭐ Customer Love
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3">
             What Our Customers Say
           </h2>
-          <p className="text-gray-500 text-sm sm:text-base max-w-md mx-auto">
+          <p className="text-slate-300 text-sm sm:text-base max-w-md mx-auto">
             Real reviews from real customers across Pakistan. Their words, not ours.
           </p>
         </motion.div>
@@ -90,7 +90,7 @@ const Testimonials: React.FC = () => {
               {visibleItems.map((t) => (
                 <div
                   key={t.id}
-                  className="bg-white rounded-2xl p-5 sm:p-6 shadow-md hover:shadow-lg transition-shadow relative"
+                  className="bg-slate-900 rounded-2xl p-5 sm:p-6 shadow-md shadow-black/20 hover:shadow-lg transition-shadow relative"
                 >
                   {/* Quote icon */}
                   <Quote size={28} className="text-indigo-100 absolute top-4 right-4 rotate-180" />
@@ -107,18 +107,18 @@ const Testimonials: React.FC = () => {
                   </div>
 
                   {/* Review */}
-                  <p className="text-gray-700 text-sm leading-relaxed mb-4 line-clamp-4">
+                  <p className="text-slate-300 text-sm leading-relaxed mb-4 line-clamp-4">
                     "{t.text}"
                   </p>
 
                   {/* Author */}
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white text-sm font-bold flex-shrink-0">
+                    <div className="w-10 h-10 bg-amber-400 rounded-full flex items-center justify-center text-slate-950 text-sm font-bold flex-shrink-0">
                       {t.avatar}
                     </div>
                     <div>
-                      <p className="font-bold text-gray-900 text-sm">{t.name}</p>
-                      <p className="text-gray-400 text-xs">{t.location}, Pakistan</p>
+                      <p className="font-bold text-white text-sm">{t.name}</p>
+                      <p className="text-slate-400 text-xs">{t.location}, Pakistan</p>
                     </div>
                     <div className="ml-auto flex-shrink-0">
                       <span className="text-xs text-emerald-600 font-semibold bg-emerald-50 px-2 py-1 rounded-full">
@@ -138,8 +138,8 @@ const Testimonials: React.FC = () => {
               disabled={current === 0}
               className={`p-3 rounded-full border-2 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center ${
                 current === 0
-                  ? 'border-gray-200 text-gray-300 cursor-not-allowed'
-                  : 'border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white'
+                  ? 'border-slate-700 text-slate-500 cursor-not-allowed bg-slate-950'
+                  : 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-950'
               }`}
               aria-label="Previous testimonials"
             >
@@ -153,7 +153,7 @@ const Testimonials: React.FC = () => {
                   key={i}
                   onClick={() => setCurrent(i)}
                   className={`h-2 rounded-full transition-all duration-300 ${
-                    i === current ? 'w-6 bg-indigo-600' : 'w-2 bg-gray-300 hover:bg-gray-400'
+                    i === current ? 'w-6 bg-amber-400' : 'w-2 bg-slate-700 hover:bg-slate-500'
                   }`}
                   aria-label={`Go to testimonial ${i + 1}`}
                 />
@@ -165,8 +165,8 @@ const Testimonials: React.FC = () => {
               disabled={current >= maxIndex}
               className={`p-3 rounded-full border-2 transition-all min-h-[44px] min-w-[44px] flex items-center justify-center ${
                 current >= maxIndex
-                  ? 'border-gray-200 text-gray-300 cursor-not-allowed'
-                  : 'border-indigo-600 text-indigo-600 hover:bg-indigo-600 hover:text-white'
+                  ? 'border-slate-700 text-slate-500 cursor-not-allowed bg-slate-950'
+                  : 'border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-slate-950'
               }`}
               aria-label="Next testimonials"
             >

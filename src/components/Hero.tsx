@@ -12,9 +12,9 @@ const slides = [
     subtext: 'Premium wireless audio that redefines your listening experience. Starting from just Rs.1,799.',
     cta: 'Shop Earbuds',
     ctaHref: '#products',
-    accent: 'from-indigo-900/80 via-indigo-800/60 to-transparent',
-    badgeColor: 'bg-orange-500',
-    ctaColor: 'bg-orange-500 hover:bg-orange-400',
+    accent: 'from-slate-950/90 via-slate-900/60 to-transparent',
+    badgeColor: 'bg-amber-500/95',
+    ctaColor: 'bg-amber-300 hover:bg-amber-200',
   },
   {
     id: 2,
@@ -25,9 +25,9 @@ const slides = [
     subtext: 'High-capacity power banks with fast charging. Never run out of battery again. From Rs.2,499.',
     cta: 'Shop Power Banks',
     ctaHref: '#products',
-    accent: 'from-slate-900/80 via-slate-800/60 to-transparent',
-    badgeColor: 'bg-indigo-500',
-    ctaColor: 'bg-indigo-600 hover:bg-indigo-500',
+    accent: 'from-slate-950/90 via-slate-900/55 to-transparent',
+    badgeColor: 'bg-amber-500/95',
+    ctaColor: 'bg-amber-300 hover:bg-amber-200',
   },
   {
     id: 3,
@@ -38,9 +38,9 @@ const slides = [
     subtext: 'Military-grade cases and 9H tempered glass. Your phone, fully protected — stylishly. From Rs.599.',
     cta: 'Shop Protection',
     ctaHref: '#products',
-    accent: 'from-emerald-900/80 via-emerald-800/50 to-transparent',
-    badgeColor: 'bg-emerald-500',
-    ctaColor: 'bg-emerald-600 hover:bg-emerald-500',
+    accent: 'from-slate-950/90 via-slate-900/55 to-transparent',
+    badgeColor: 'bg-amber-500/95',
+    ctaColor: 'bg-amber-300 hover:bg-amber-200',
   },
 ];
 
@@ -142,7 +142,7 @@ const Hero: React.FC = () => {
                   >
                     {slide.headline}
                     <br />
-                    <span className="text-orange-400">{slide.highlight}</span>
+                    <span className="text-amber-200">{slide.highlight}</span>
                   </motion.h1>
 
                   {/* Subtext */}
@@ -166,7 +166,7 @@ const Hero: React.FC = () => {
                       href={slide.ctaHref}
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.97 }}
-                      className={`${slide.ctaColor} text-white font-bold px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-base shadow-lg transition-colors`}
+                      className={`${slide.ctaColor} text-slate-950 font-bold px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-base shadow-lg transition-colors`}
                     >
                       {slide.cta} →
                     </motion.a>
@@ -174,7 +174,7 @@ const Hero: React.FC = () => {
                       href="#categories"
                       whileHover={{ scale: 1.05 }}
                       whileTap={{ scale: 0.97 }}
-                      className="bg-white/20 backdrop-blur-sm hover:bg-white/30 text-white font-semibold px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-base border border-white/40 transition-colors"
+                      className="bg-slate-900/80 backdrop-blur-sm hover:bg-slate-800/90 text-white font-semibold px-5 sm:px-7 py-2.5 sm:py-3.5 rounded-xl text-sm sm:text-base border border-amber-400/25 transition-colors"
                     >
                       Browse All
                     </motion.a>
@@ -188,7 +188,7 @@ const Hero: React.FC = () => {
                     className="hidden sm:flex gap-4 flex-wrap"
                   >
                     {['🚚 Free Delivery', '💳 Cash on Delivery', '🔄 7-Day Replacement'].map(badge => (
-                      <span key={badge} className="text-xs text-white/80 font-medium">
+                      <span key={badge} className="text-xs text-amber-200 font-medium">
                         {badge}
                       </span>
                     ))}

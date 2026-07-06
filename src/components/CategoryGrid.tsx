@@ -5,7 +5,7 @@ import { categories } from '../data/products';
 
 const CategoryGrid: React.FC = () => {
   return (
-    <section id="categories" className="py-14 sm:py-20 bg-gray-50">
+    <section id="categories" className="py-14 sm:py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -15,13 +15,13 @@ const CategoryGrid: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10 sm:mb-12"
         >
-          <span className="inline-block text-indigo-600 font-semibold text-sm uppercase tracking-widest mb-2">
+          <span className="inline-block text-amber-300 font-semibold text-sm uppercase tracking-widest mb-2">
             Browse By Category
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3">
             Shop Your Favorites
           </h2>
-          <p className="text-gray-500 text-sm sm:text-base max-w-md mx-auto">
+          <p className="text-slate-300 text-sm sm:text-base max-w-md mx-auto">
             Explore our wide range of premium mobile accessories, curated for every need.
           </p>
         </motion.div>

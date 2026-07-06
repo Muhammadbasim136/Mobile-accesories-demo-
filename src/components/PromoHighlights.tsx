@@ -10,8 +10,8 @@ const promos = [
     subtitle: 'From Rs.2,499',
     description: 'High-capacity portable chargers for every lifestyle',
     cta: 'Shop Power Banks',
-    accent: 'from-indigo-900/70 via-indigo-800/40 to-transparent',
-    tagColor: 'bg-indigo-600',
+    accent: 'from-slate-950/80 via-amber-500/30 to-transparent',
+    tagColor: 'bg-amber-400 text-slate-950',
   },
   {
     id: 2,
@@ -21,14 +21,14 @@ const promos = [
     subtitle: 'From Rs.1,799',
     description: 'Crystal-clear audio with premium comfort and style',
     cta: 'Shop Earbuds',
-    accent: 'from-orange-900/70 via-orange-800/40 to-transparent',
-    tagColor: 'bg-orange-500',
+    accent: 'from-slate-950/80 via-amber-500/30 to-transparent',
+    tagColor: 'bg-amber-400 text-slate-950',
   },
 ];
 
 const PromoHighlights: React.FC = () => {
   return (
-    <section className="py-14 sm:py-20 bg-gray-50">
+    <section className="py-14 sm:py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -37,10 +37,10 @@ const PromoHighlights: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10"
         >
-          <span className="inline-block text-indigo-600 font-semibold text-sm uppercase tracking-widest mb-2">
+          <span className="inline-block text-amber-300 font-semibold text-sm uppercase tracking-widest mb-2">
             Hot Picks
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white">
             Deals You'll Love
           </h2>
         </motion.div>
@@ -70,7 +70,7 @@ const PromoHighlights: React.FC = () => {
 
               {/* Content */}
               <div className="absolute inset-0 flex flex-col justify-center p-6 sm:p-8">
-                <span className={`inline-block ${promo.tagColor} text-white text-xs font-black px-3 py-1 rounded-full w-fit mb-3`}>
+                <span className={`inline-block ${promo.tagColor} text-xs font-black px-3 py-1 rounded-full w-fit mb-3`}>
                   {promo.tag}
                 </span>
                 <h3 className="text-3xl sm:text-4xl font-black text-white mb-1 leading-tight">
@@ -82,7 +82,7 @@ const PromoHighlights: React.FC = () => {
                   href="#products"
                   whileHover={{ scale: 1.05, x: 4 }}
                   whileTap={{ scale: 0.97 }}
-                  className="inline-flex items-center gap-2 bg-white text-gray-900 font-bold px-5 py-2.5 rounded-xl text-sm w-fit shadow-lg hover:shadow-xl transition-shadow"
+                  className="inline-flex items-center gap-2 bg-amber-400 text-slate-950 font-bold px-5 py-2.5 rounded-xl text-sm w-fit shadow-lg hover:shadow-xl transition-shadow"
                 >
                   {promo.cta} →
                 </motion.a>

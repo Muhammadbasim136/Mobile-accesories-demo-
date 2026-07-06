@@ -35,20 +35,20 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
     <motion.header
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-lg py-2'
-          : 'bg-white py-3'
+          ? 'bg-slate-950/95 backdrop-blur-md shadow-black/30 shadow-lg py-2'
+          : 'bg-slate-950 py-3'
       }`}
       initial={false}
     >
       <div className="max-w-7xl mx-auto px-4 flex items-center gap-4">
         {/* Logo */}
         <a href="#home" className="flex items-center gap-2 flex-shrink-0 mr-2">
-          <div className="bg-indigo-700 text-white rounded-xl px-3 py-2 font-black text-sm tracking-tight leading-none">
-            <span className="text-orange-400">TT</span>
+          <div className="bg-amber-400 text-slate-950 rounded-xl px-3 py-2 font-black text-sm tracking-tight leading-none shadow-md shadow-amber-500/20">
+            <span className="text-slate-950">TT</span>
           </div>
           <div className="hidden sm:block">
-            <p className="font-black text-gray-900 text-sm leading-none tracking-tight">Tech-Trends</p>
-            <p className="text-indigo-600 text-xs font-medium">Mobile Accessories</p>
+            <p className="font-black text-white text-sm leading-none tracking-tight">Tech-Trends</p>
+            <p className="text-amber-300 text-xs font-medium">Mobile Accessories</p>
           </div>
         </a>
 
@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
           >
             <button
               onClick={() => setMegaOpen(v => !v)}
-              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 transition-colors"
+              className="flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold text-slate-200 hover:text-amber-300 hover:bg-slate-900 transition-colors"
             >
               Categories
               <motion.div
@@ -77,16 +77,16 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
             <MegaMenu isOpen={megaOpen} onClose={() => setMegaOpen(false)} />
           </div>
 
-          <a href="#best-selling" className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 transition-colors">
+          <a href="#best-selling" className="px-4 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-300 hover:bg-slate-900 transition-colors">
             Best Sellers
           </a>
-          <a href="#new-arrivals" className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 transition-colors">
+          <a href="#new-arrivals" className="px-4 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-300 hover:bg-slate-900 transition-colors">
             New Arrivals
           </a>
-          <a href="#footer" className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 transition-colors">
+          <a href="#footer" className="px-4 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-300 hover:bg-slate-900 transition-colors">
             Track Order
           </a>
-          <a href="#footer" className="px-4 py-2 rounded-xl text-sm font-medium text-gray-700 hover:text-indigo-700 hover:bg-indigo-50 transition-colors">
+          <a href="#footer" className="px-4 py-2 rounded-xl text-sm font-medium text-slate-200 hover:text-amber-300 hover:bg-slate-900 transition-colors">
             Contact
           </a>
         </nav>
@@ -94,9 +94,9 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
         {/* Right Side Actions */}
         <div className="flex items-center gap-1 ml-auto">
           {/* Region Badge */}
-          <div className="hidden lg:flex items-center gap-1 px-3 py-1.5 bg-gray-100 rounded-lg text-xs font-medium text-gray-600 mr-1">
-            <MapPin size={12} className="text-indigo-500" />
-            <span>Pakistan · PKR ₨</span>
+          <div className="hidden lg:flex items-center gap-1 px-3 py-1.5 bg-slate-800 rounded-lg text-xs font-medium text-amber-200 mr-1">
+            <MapPin size={12} className="text-amber-300" />
+            <span>Karachi · PKR ₨</span>
           </div>
 
           {/* Search */}
@@ -104,20 +104,20 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onSearchOpen}
-            className="p-2.5 rounded-xl hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="p-2.5 rounded-xl hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Search"
           >
-            <Search size={20} className="text-gray-700" />
+            <Search size={20} className="text-amber-300" />
           </motion.button>
 
           {/* Wishlist */}
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="p-2.5 rounded-xl hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px] hidden sm:flex items-center justify-center"
+            className="p-2.5 rounded-xl hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] hidden sm:flex items-center justify-center"
             aria-label="Wishlist"
           >
-            <Heart size={20} className="text-gray-700" />
+            <Heart size={20} className="text-amber-300" />
           </motion.button>
 
           {/* Cart */}
@@ -125,7 +125,7 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={openCart}
-            className="relative p-2.5 rounded-xl hover:bg-indigo-50 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+            className="relative p-2.5 rounded-xl hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
             aria-label="Cart"
           >
             <ShoppingCart size={20} className="text-gray-700" />
@@ -145,10 +145,10 @@ const Header: React.FC<HeaderProps> = ({ onSearchOpen, onMenuOpen }) => {
           <motion.button
             whileTap={{ scale: 0.95 }}
             onClick={onMenuOpen}
-            className="md:hidden p-2.5 rounded-xl hover:bg-gray-100 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center ml-1"
+            className="md:hidden p-2.5 rounded-xl hover:bg-slate-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center ml-1"
             aria-label="Open menu"
           >
-            <Menu size={22} className="text-gray-700" />
+            <Menu size={22} className="text-amber-300" />
           </motion.button>
         </div>
       </div>

@@ -45,15 +45,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
   };
 
   const badgeColors: Record<string, string> = {
-    'BEST SELLER': 'bg-orange-500',
-    'HOT': 'bg-red-500',
-    'NEW': 'bg-emerald-500',
-    'PREMIUM': 'bg-purple-600',
+    'BEST SELLER': 'bg-amber-400 text-slate-950',
+    'HOT': 'bg-amber-400 text-slate-950',
+    'NEW': 'bg-amber-400 text-slate-950',
+    'PREMIUM': 'bg-amber-400 text-slate-950',
   };
 
   const badgeColor = product.badge
-    ? badgeColors[product.badge] || 'bg-indigo-600'
-    : 'bg-indigo-600';
+    ? badgeColors[product.badge] || 'bg-amber-400 text-slate-950'
+    : 'bg-amber-400 text-slate-950';
 
   return (
     <motion.div
@@ -61,12 +61,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.4, delay: index * 0.08 }}
-      className="group relative bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-shadow duration-300 flex flex-col"
+      className="group relative bg-slate-900 rounded-2xl overflow-hidden shadow-sm shadow-black/20 hover:shadow-xl transition-shadow duration-300 flex flex-col"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Image Container */}
-      <div className="relative overflow-hidden aspect-square bg-gray-50">
+      <div className="relative overflow-hidden aspect-square bg-slate-800">
         {/* Main Image */}
         <motion.img
           src={imgError ? product.image : (isHovered && product.image2 ? product.image2 : product.image)}
@@ -98,7 +98,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
         )}
 
         {/* Savings badge */}
-        <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm text-xs font-semibold text-gray-700 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+        <div className="absolute bottom-3 left-3 bg-slate-900/90 backdrop-blur-sm text-xs font-semibold text-slate-200 px-2 py-1 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
           Save Rs.{savings.toLocaleString()}
         </div>
 
@@ -106,12 +106,12 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
         <motion.button
           whileTap={{ scale: 0.85 }}
           onClick={() => setWishlisted(v => !v)}
-          className="absolute top-3 right-3 p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all min-h-[36px] min-w-[36px] flex items-center justify-center"
+          className="absolute top-3 right-3 p-2 bg-slate-800 rounded-full shadow-md shadow-black/30 hover:shadow-lg transition-all min-h-[36px] min-w-[36px] flex items-center justify-center"
           aria-label="Add to wishlist"
         >
           <Heart
             size={16}
-            className={wishlisted ? 'fill-red-500 text-red-500' : 'text-gray-400'}
+            className={wishlisted ? 'fill-red-500 text-red-500' : 'text-slate-400'}
           />
         </motion.button>
 
@@ -120,17 +120,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
           initial={{ opacity: 0, y: 4 }}
           animate={{ opacity: isHovered ? 1 : 0, y: isHovered ? 0 : 4 }}
           transition={{ duration: 0.2 }}
-          className="absolute top-12 right-3 p-2 bg-white rounded-full shadow-md hover:shadow-lg transition-all min-h-[36px] min-w-[36px] flex items-center justify-center"
+          className="absolute top-12 right-3 p-2 bg-slate-800 rounded-full shadow-md shadow-black/30 hover:shadow-lg transition-all min-h-[36px] min-w-[36px] flex items-center justify-center"
           aria-label="Quick view"
         >
-          <Eye size={14} className="text-gray-500" />
+          <Eye size={14} className="text-slate-300" />
         </motion.button>
       </div>
 
       {/* Content */}
       <div className="p-3 sm:p-4 flex flex-col flex-1">
         {/* Name */}
-        <h3 className="text-sm font-semibold text-gray-800 leading-snug line-clamp-2 mb-2 flex-1">
+        <h3 className="text-sm font-semibold text-white leading-snug line-clamp-2 mb-2 flex-1">
           {product.name}
         </h3>
 
@@ -142,7 +142,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
                 key={color}
                 onClick={() => setSelectedColor(color)}
                 className={`w-5 h-5 rounded-full border-2 transition-all ${
-                  selectedColor === color ? 'border-indigo-600 scale-110' : 'border-transparent hover:border-gray-300'
+                  selectedColor === color ? 'border-amber-400 scale-110' : 'border-transparent hover:border-slate-400'
                 }`}
                 style={{ backgroundColor: color }}
                 aria-label={`Select color ${color}`}
@@ -153,10 +153,10 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
 
         {/* Pricing */}
         <div className="flex items-center gap-2 mb-3">
-          <span className="text-base sm:text-lg font-black text-indigo-700">
+          <span className="text-base sm:text-lg font-black text-amber-300">
             Rs.{product.price.toLocaleString()}
           </span>
-          <span className="text-xs sm:text-sm text-gray-400 line-through font-medium">
+          <span className="text-xs sm:text-sm text-slate-400 line-through font-medium">
             Rs.{product.originalPrice.toLocaleString()}
           </span>
         </div>
@@ -169,7 +169,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
           className={`w-full py-2.5 rounded-xl text-sm font-bold transition-all flex items-center justify-center gap-2 min-h-[44px] ${
             added
               ? 'bg-emerald-500 text-white'
-              : 'bg-indigo-600 hover:bg-indigo-700 text-white'
+              : 'bg-amber-400 hover:bg-amber-300 text-slate-950'
           }`}
         >
           {added ? (

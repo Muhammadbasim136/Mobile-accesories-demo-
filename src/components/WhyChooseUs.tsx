@@ -8,49 +8,49 @@ import {
 const features = [
   {
     icon: Shield,
-    color: 'text-indigo-600',
-    bg: 'bg-indigo-50',
-    border: 'border-indigo-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: 'Quality You Can Trust',
     desc: 'All products are tested and verified for quality. We partner only with trusted manufacturers.',
   },
   {
     icon: Truck,
-    color: 'text-orange-500',
-    bg: 'bg-orange-50',
-    border: 'border-orange-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: 'Fast Nationwide Delivery',
     desc: 'Deliver to every city in Pakistan within 2–5 business days. Express options available.',
   },
   {
     icon: DollarSign,
-    color: 'text-emerald-600',
-    bg: 'bg-emerald-50',
-    border: 'border-emerald-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: 'Affordable Premium Pricing',
     desc: 'Get top-tier accessories at prices that won\'t break the bank. Best value guaranteed.',
   },
   {
     icon: MessageCircle,
-    color: 'text-blue-600',
-    bg: 'bg-blue-50',
-    border: 'border-blue-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: '24/7 WhatsApp Support',
     desc: 'Our friendly support team is available around the clock on WhatsApp. We\'re always here.',
   },
   {
     icon: RefreshCw,
-    color: 'text-purple-600',
-    bg: 'bg-purple-50',
-    border: 'border-purple-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: '7-Day Easy Replacement',
     desc: 'Not satisfied? Get a hassle-free replacement within 7 days — no questions asked.',
   },
   {
     icon: CreditCard,
-    color: 'text-pink-600',
-    bg: 'bg-pink-50',
-    border: 'border-pink-200',
+    color: 'text-amber-300',
+    bg: 'bg-slate-900',
+    border: 'border-slate-800',
     title: 'Cash on Delivery',
     desc: 'Pay when you receive your order. We also accept JazzCash, EasyPaisa, and bank transfer.',
   },
@@ -108,7 +108,7 @@ const CounterItem: React.FC<{ counter: typeof counters[0]; isInView: boolean; in
       <div className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-none">
         {counter.prefix}{display}{counter.suffix}
       </div>
-      <div className="text-sm text-indigo-200 font-medium mt-1">{counter.label}</div>
+      <div className="text-sm text-amber-200 font-medium mt-1">{counter.label}</div>
     </motion.div>
   );
 };
@@ -118,7 +118,7 @@ const WhyChooseUs: React.FC = () => {
   const isCounterInView = useInView(counterRef, { once: true, amount: 0.3 });
 
   return (
-    <section id="why-us" className="py-14 sm:py-20 bg-white">
+    <section id="why-us" className="py-14 sm:py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -128,13 +128,13 @@ const WhyChooseUs: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-10 sm:mb-14"
         >
-          <span className="inline-block text-indigo-600 font-semibold text-sm uppercase tracking-widest mb-2">
+          <span className="inline-block text-amber-300 font-semibold text-sm uppercase tracking-widest mb-2">
             Why Tech-Trends?
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900 mb-3">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3">
             The Tech-Trends Difference
           </h2>
-          <p className="text-gray-500 text-sm sm:text-base max-w-xl mx-auto">
+          <p className="text-slate-300 text-sm sm:text-base max-w-xl mx-auto">
             We're not just selling accessories — we're delivering a premium experience backed by real service.
           </p>
         </motion.div>
@@ -156,8 +156,8 @@ const WhyChooseUs: React.FC = () => {
                 <div className={`w-12 h-12 rounded-xl ${f.bg} border ${f.border} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
                   <Icon size={22} className={f.color} />
                 </div>
-                <h3 className="font-bold text-gray-900 text-base mb-2">{f.title}</h3>
-                <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                <h3 className="font-bold text-white text-base mb-2">{f.title}</h3>
+                <p className="text-slate-300 text-sm leading-relaxed">{f.desc}</p>
               </motion.div>
             );
           })}
@@ -166,7 +166,7 @@ const WhyChooseUs: React.FC = () => {
         {/* Animated Counters */}
         <div
           ref={counterRef}
-          className="bg-gradient-to-br from-indigo-700 to-indigo-900 rounded-3xl p-8 sm:p-12"
+          className="bg-gradient-to-br from-amber-500 via-amber-600 to-slate-950 rounded-3xl p-8 sm:p-12"
         >
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {counters.map((c, i) => (
@@ -179,10 +179,10 @@ const WhyChooseUs: React.FC = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.5 }}
-            className="flex flex-wrap justify-center gap-3 mt-8 pt-8 border-t border-indigo-600"
+            className="flex flex-wrap justify-center gap-3 mt-8 pt-8 border-t border-amber-400/40"
           >
             {['🚚 Free Delivery', '💳 Cash on Delivery', '⚡ JazzCash & EasyPaisa', '🔄 7-Day Replacement', '💬 24/7 WhatsApp'].map(badge => (
-              <span key={badge} className="text-white/80 text-xs sm:text-sm font-medium bg-indigo-600/50 px-3 py-1.5 rounded-full">
+              <span key={badge} className="text-white/80 text-xs sm:text-sm font-medium bg-amber-400/20 px-3 py-1.5 rounded-full">
                 {badge}
               </span>
             ))}

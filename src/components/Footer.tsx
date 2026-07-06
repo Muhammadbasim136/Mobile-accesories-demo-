@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail } from 'lucide-react';
+import { MapPin, Phone, Mail, Globe2 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -12,49 +12,67 @@ const Footer: React.FC = () => {
           {/* Brand Column */}
           <div className="col-span-2 lg:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="bg-indigo-600 text-white rounded-xl px-3 py-2 font-black text-sm">
-                <span className="text-orange-400">TT</span>
+              <div className="bg-amber-400 text-slate-950 rounded-xl px-3 py-2 font-black text-sm shadow-lg shadow-amber-500/20">
+                <span className="text-slate-950">TT</span>
               </div>
               <div>
                 <p className="font-black text-white text-sm leading-none">Tech-Trends</p>
-                <p className="text-indigo-400 text-xs">Mobile Accessories</p>
+                <p className="text-amber-300 text-xs">Mobile Accessories</p>
               </div>
             </div>
-            <p className="text-sm text-gray-400 leading-relaxed mb-5 max-w-xs">
-              Pakistan's trusted destination for premium mobile accessories. Quality you can feel, prices you'll love.
+            <p className="text-sm text-slate-300 leading-relaxed mb-5 max-w-xs">
+              Karachi’s elite mobile accessories showroom—stylish cases, fast chargers, audio, and premium phone essentials.
             </p>
-            <p className="text-orange-400 font-semibold text-sm italic mb-5">"Power Up Your Everyday"</p>
+            <p className="text-amber-300 font-semibold text-sm italic mb-5">"Luxury Mobile Gear. Delivered Fast."</p>
 
             {/* Social Icons */}
             <div className="flex gap-3">
               {[
                 {
                   icon: () => (
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path d="M18.896 0H5.104C2.289 0 0 2.289 0 5.104v13.792C0 21.711 2.289 24 5.104 24h6.692V14.705h-2.274v-3.617h2.274V8.302c0-2.255 1.378-3.484 3.392-3.484.962 0 1.79.072 2.03.104v2.356h-1.394c-1.094 0-1.307.52-1.307 1.283v1.682h2.614l-.34 3.617h-2.274V24h4.463C21.711 24 24 21.711 24 18.896V5.104C24 2.289 21.711 0 18.896 0z" />
+                    </svg>
                   ),
-                  href: '#', label: 'Instagram', color: 'hover:bg-pink-600'
-                },
-                {
-                  icon: () => (
-                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-                  ),
-                  href: '#', label: 'Facebook', color: 'hover:bg-blue-600'
+                  href: 'https://www.facebook.com/TechTrendsMobileAccessories',
+                  label: 'Facebook',
+                  color: 'hover:bg-blue-600',
                 },
                 {
                   icon: () => (
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                      <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V9.38a8.28 8.28 0 004.85 1.54V7.38a4.83 4.83 0 01-1.08-.69z"/>
+                      <path d="M12 2.163c3.2 0 3.584.012 4.85.07 1.17.054 1.97.24 2.427.403a4.92 4.92 0 011.77 1.03 4.92 4.92 0 011.03 1.77c.163.457.35 1.257.403 2.427.058 1.266.07 1.65.07 4.85s-.012 3.584-.07 4.85c-.054 1.17-.24 1.97-.403 2.427a4.924 4.924 0 01-1.03 1.77 4.924 4.924 0 01-1.77 1.03c-.457.163-1.257.35-2.427.403-1.266.058-1.65.07-4.85.07s-3.584-.012-4.85-.07c-1.17-.054-1.97-.24-2.427-.403a4.92 4.92 0 01-1.77-1.03 4.92 4.92 0 01-1.03-1.77c-.163-.457-.35-1.257-.403-2.427C2.175 15.584 2.163 15.2 2.163 12s.012-3.583.07-4.85c.054-1.17.24-1.97.403-2.427a4.92 4.92 0 011.03-1.77 4.92 4.92 0 011.77-1.03c.457-.163 1.257-.35 2.427-.403C8.416 2.175 8.8 2.163 12 2.163zm0-2.163C8.734 0 8.332.013 7.052.072 5.77.131 4.66.352 3.705.68a7.15 7.15 0 00-2.605 1.663A7.147 7.147 0 00.68 4.948c-.328.955-.549 2.065-.608 3.347C.013 8.332 0 8.734 0 12c0 3.266.013 3.668.072 4.948.059 1.282.28 2.392.608 3.347a7.13 7.13 0 001.663 2.605 7.13 7.13 0 002.605 1.663c.955.328 2.065.549 3.347.608 1.28.059 1.682.072 4.948.072s3.668-.013 4.948-.072c1.282-.059 2.392-.28 3.347-.608a7.128 7.128 0 002.605-1.663 7.128 7.128 0 001.663-2.605c.328-.955.549-2.065.608-3.347.059-1.28.072-1.682.072-4.948s-.013-3.668-.072-4.948c-.059-1.282-.28-2.392-.608-3.347a7.128 7.128 0 00-1.663-2.605A7.128 7.128 0 0020.295.68C19.34.352 18.23.131 16.948.072 15.668.013 15.266 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.999 3.999 0 110-7.998 3.999 3.999 0 010 7.998zm6.406-11.845a1.44 1.44 0 11-2.88 0 1.44 1.44 0 012.88 0z" />
                     </svg>
                   ),
-                  href: '#', label: 'TikTok', color: 'hover:bg-black'
+                  href: 'https://www.instagram.com/techtrendsmobileaccessories',
+                  label: 'Instagram',
+                  color: 'hover:bg-pink-600',
                 },
                 {
                   icon: () => (
                     <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                      <path d="M19.615 3.184C18.45 2.574 12 2.574 12 2.574s-6.45 0-7.615.61C2.565 3.25 2 4.692 2 7.5v9c0 2.809.565 4.25 2.385 4.917C5.55 21.426 12 21.426 12 21.426s6.45 0 7.615-.61C21.435 20.75 22 19.308 22 16.5v-9c0-2.808-.565-4.25-2.385-4.316zM9.7 16.6V7.4l7.4 4.6-7.4 4.6z" />
                     </svg>
                   ),
-                  href: 'https://wa.me/923001234567', label: 'WhatsApp', color: 'hover:bg-green-600'
+                  href: 'https://www.youtube.com/@TechTrendsMobileAccessories',
+                  label: 'YouTube',
+                  color: 'hover:bg-red-600',
+                },
+                {
+                  icon: Globe2,
+                  href: 'https://techtrends.pk',
+                  label: 'Website',
+                  color: 'hover:bg-amber-500',
+                },
+                {
+                  icon: () => (
+                    <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                      <path d="M9.5 3.5h5v5h-5v-5zM4 8.5h5v12H4v-12zm11 0h5v12h-5v-12zm-2.5 7.5h-5v-5h5v5z" />
+                    </svg>
+                  ),
+                  href: 'https://www.tiktok.com/@TechTrendsMobileAccessories',
+                  label: 'TikTok',
+                  color: 'hover:bg-black',
                 },
               ].map((social) => {
                 const Icon = social.icon;
@@ -62,6 +80,8 @@ const Footer: React.FC = () => {
                   <motion.a
                     key={social.label}
                     href={social.href}
+                    target="_blank"
+                    rel="noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className={`w-9 h-9 bg-slate-800 ${social.color} text-gray-400 hover:text-white rounded-xl flex items-center justify-center transition-colors min-h-[36px] min-w-[36px]`}
@@ -75,17 +95,17 @@ const Footer: React.FC = () => {
 
             {/* Contact */}
             <div className="mt-5 space-y-2">
-              <a href="https://wa.me/923001234567" className="flex items-center gap-2 text-sm text-gray-400 hover:text-green-400 transition-colors">
+              <a href="https://wa.me/923232255520" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-gray-400 hover:text-green-400 transition-colors">
                 <Phone size={14} className="text-green-500 flex-shrink-0" />
-                +92 300 1234567 (WhatsApp)
+                +92 323 2255520 (WhatsApp)
               </a>
-              <a href="mailto:support@techtrends.pk" className="flex items-center gap-2 text-sm text-gray-400 hover:text-indigo-400 transition-colors">
-                <Mail size={14} className="text-indigo-400 flex-shrink-0" />
+              <a href="mailto:support@techtrends.pk" className="flex items-center gap-2 text-sm text-gray-400 hover:text-amber-300 transition-colors">
+                <Mail size={14} className="text-amber-300 flex-shrink-0" />
                 support@techtrends.pk
               </a>
-              <div className="flex items-center gap-2 text-sm text-gray-400">
-                <MapPin size={14} className="text-orange-400 flex-shrink-0" />
-                Pakistan — Nationwide Delivery
+              <div className="flex items-start gap-2 text-sm text-gray-400">
+                <MapPin size={14} className="text-amber-300 flex-shrink-0 mt-0.5" />
+                <span>Shop #129, West Point Tower, Phase 2 EXT, Karachi</span>
               </div>
             </div>
           </div>
@@ -105,7 +125,7 @@ const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-indigo-400 transition-colors flex items-center gap-1"
+                    className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1"
                   >
                     <span className="text-gray-600">›</span> {link.label}
                   </a>
@@ -129,7 +149,7 @@ const Footer: React.FC = () => {
                 'Smartwatches',
               ].map(cat => (
                 <li key={cat}>
-                  <a href="#" className="text-sm text-gray-400 hover:text-orange-400 transition-colors flex items-center gap-1">
+                  <a href="#" className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1">
                     <span className="text-gray-600">›</span> {cat}
                   </a>
                 </li>
@@ -150,7 +170,7 @@ const Footer: React.FC = () => {
                 'Cookie Policy',
               ].map(policy => (
                 <li key={policy}>
-                  <a href="#" className="text-sm text-gray-400 hover:text-indigo-400 transition-colors flex items-center gap-1">
+                    <a href="#" className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1">
                     <span className="text-gray-600">›</span> {policy}
                   </a>
                 </li>
@@ -159,11 +179,11 @@ const Footer: React.FC = () => {
 
             {/* Trust Badges */}
             <div className="space-y-2">
-              <span className="bg-emerald-900/50 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-lg inline-flex items-center gap-1">
+              <span className="bg-amber-900/50 text-amber-300 text-xs font-semibold px-3 py-1.5 rounded-lg inline-flex items-center gap-1">
                 ✓ Cash on Delivery
               </span>
               <br/>
-              <span className="bg-indigo-900/50 text-indigo-400 text-xs font-semibold px-3 py-1.5 rounded-lg inline-flex items-center gap-1">
+              <span className="bg-amber-900/50 text-amber-300 text-xs font-semibold px-3 py-1.5 rounded-lg inline-flex items-center gap-1">
                 🔄 7-Day Replacement
               </span>
             </div>
@@ -192,8 +212,8 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="text-center sm:text-right">
-              <p className="text-xs text-gray-400">🔒 Secure & Trusted Shopping</p>
-              <p className="text-xs text-gray-500 mt-1">Pakistan's #1 Mobile Accessories Store</p>
+              <p className="text-xs text-amber-300">🔒 Secure & Trusted Shopping</p>
+              <p className="text-xs text-amber-300 mt-1">Pakistan's #1 Mobile Accessories Store</p>
             </div>
           </div>
         </div>

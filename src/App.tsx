@@ -30,7 +30,7 @@ const AppContent: React.FC = () => {
   const [searchOpen, setSearchOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-white overflow-x-hidden max-w-[100vw]">
+    <div className="min-h-screen bg-slate-950 text-white overflow-x-hidden max-w-[100vw]">
       {/* Announcement Bar removed per request */}
 
       {/* Header - fixed, sits on top */}

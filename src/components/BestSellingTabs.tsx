@@ -25,7 +25,7 @@ const BestSellingTabs: React.FC = () => {
   const products = bestSelling[activeTab];
 
   return (
-    <section id="best-selling" className="py-14 sm:py-20 bg-white">
+    <section id="best-selling" className="py-14 sm:py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <motion.div
@@ -35,31 +35,31 @@ const BestSellingTabs: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-8 sm:mb-10"
         >
-          <span className="inline-block text-orange-500 font-semibold text-sm uppercase tracking-widest mb-2">
+          <span className="inline-block text-amber-300 font-semibold text-sm uppercase tracking-widest mb-2">
             🏆 Top Performers
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-gray-900">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white">
             Best Selling Products
           </h2>
         </motion.div>
 
         {/* Tabs */}
         <div className="flex justify-center mb-8">
-          <div className="relative flex bg-gray-100 rounded-2xl p-1.5 gap-1">
+          <div className="relative flex bg-slate-900 rounded-2xl p-1.5 gap-1">
             {tabs.map((tab) => (
               <button
                 key={tab.key}
                 onClick={() => handleTabChange(tab.key)}
                 className={`relative px-4 sm:px-6 py-2.5 rounded-xl text-sm font-semibold transition-colors duration-200 z-10 min-h-[44px] ${
                   activeTab === tab.key
-                    ? 'text-white'
-                    : 'text-gray-600 hover:text-gray-900'
+                    ? 'text-slate-950'
+                    : 'text-slate-300 hover:text-white'
                 }`}
               >
                 {activeTab === tab.key && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-indigo-600 rounded-xl"
+                    className="absolute inset-0 bg-amber-400 rounded-xl"
                     style={{ zIndex: -1 }}
                     transition={{ type: 'spring', stiffness: 400, damping: 30 }}
                   />

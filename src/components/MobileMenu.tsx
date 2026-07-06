@@ -38,17 +38,17 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 
           {/* Drawer */}
           <motion.div
-            className="fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-white z-50 shadow-2xl flex flex-col overflow-y-auto"
+            className="fixed top-0 left-0 h-full w-80 max-w-[85vw] bg-slate-950 text-white z-50 shadow-2xl flex flex-col overflow-y-auto"
             initial={{ x: '-100%' }}
             animate={{ x: 0 }}
             exit={{ x: '-100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 300 }}
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-5 py-4 bg-indigo-700 text-white flex-shrink-0">
+            <div className="flex items-center justify-between px-5 py-4 bg-slate-950 text-white flex-shrink-0 border-b border-slate-800">
               <div>
-                <span className="font-black text-lg tracking-tight">Tech-Trends</span>
-                <p className="text-xs text-indigo-200 mt-0.5">Power Up Your Everyday</p>
+                <span className="font-black text-lg tracking-tight text-amber-300">Tech-Trends</span>
+                <p className="text-xs text-slate-400 mt-0.5">Mobile Accessories VIP Showcase</p>
               </div>
               <button
                 onClick={onClose}
@@ -61,7 +61,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
 
             {/* Nav Links */}
             <nav className="px-4 py-4 flex-1">
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wider px-2 mb-2">Navigation</p>
+              <p className="text-xs font-semibold text-slate-400 uppercase tracking-wider px-2 mb-2">Navigation</p>
               {navLinks.map((link, i) => (
                 <motion.a
                   key={link.label}
@@ -70,10 +70,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.06 + 0.1, duration: 0.3 }}
-                  className="flex items-center justify-between px-3 py-3 rounded-xl hover:bg-indigo-50 text-gray-700 hover:text-indigo-700 font-medium transition-colors min-h-[44px] group"
+                  className="flex items-center justify-between px-3 py-3 rounded-xl hover:bg-slate-800 text-slate-200 hover:text-amber-300 font-medium transition-colors min-h-[44px] group"
                 >
                   <span>{link.label}</span>
-                  <ChevronRight size={16} className="text-gray-300 group-hover:text-indigo-500 transition-colors" />
+                  <ChevronRight size={16} className="text-slate-500 group-hover:text-amber-300 transition-colors" />
                 </motion.a>
               ))}
 
@@ -90,10 +90,10 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: (navLinks.length + i) * 0.06 + 0.1, duration: 0.3 }}
-                    className="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-gray-50 transition-colors min-h-[44px]"
+                    className="flex items-center gap-3 px-3 py-3 rounded-xl hover:bg-slate-900 transition-colors min-h-[44px]"
                   >
                     <Icon size={18} className={cat.color} />
-                    <span className="text-sm font-medium text-gray-700">{cat.label}</span>
+                    <span className="text-sm font-medium text-slate-200">{cat.label}</span>
                   </motion.a>
                 );
               })}
@@ -107,13 +107,19 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
                 transition={{ delay: 0.6 }}
                 className="px-3 space-y-3"
               >
-                <a href="https://wa.me/923001234567" className="flex items-center gap-3 text-sm text-gray-600 hover:text-green-600 transition-colors">
-                  <Phone size={16} className="text-green-500 flex-shrink-0" />
-                  <span>WhatsApp: +92 300 1234567</span>
+                <a href="https://wa.me/923232255520" target="_blank" rel="noreferrer" className="flex items-center gap-3 text-sm text-slate-200 hover:text-green-400 transition-colors">
+                  <Phone size={16} className="text-green-400 flex-shrink-0" />
+                  <span>WhatsApp: +92 323 2255520</span>
                 </a>
-                <div className="flex items-center gap-3 text-sm text-gray-600">
-                  <MapPin size={16} className="text-indigo-500 flex-shrink-0" />
-                  <span>Pakistan · Nationwide Delivery</span>
+                <div className="flex flex-col gap-1 text-sm text-slate-400">
+                  <span className="flex items-center gap-3">
+                    <MapPin size={16} className="text-amber-300 flex-shrink-0" />
+                    Karachi · Nationwide Delivery
+                  </span>
+                  <span className="flex items-center gap-3">
+                    <span className="h-2 w-2 rounded-full bg-amber-300" />
+                    Shop #129, West Point Tower, Phase 2 EXT
+                  </span>
                 </div>
               </motion.div>
             </nav>
@@ -123,7 +129,7 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onClose }) => {
               <a
                 href="#products"
                 onClick={onClose}
-                className="block w-full text-center py-3 bg-indigo-600 text-white rounded-xl font-semibold hover:bg-indigo-700 transition-colors"
+                className="block w-full text-center py-3 bg-amber-400 text-slate-950 rounded-xl font-semibold hover:bg-amber-300 transition-colors"
               >
                 Shop Now
               </a>
