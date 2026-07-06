@@ -31,7 +31,7 @@ const CategoryGrid: React.FC = () => {
           {categories.map((cat, i) => (
             <motion.a
               key={cat.id}
-              href="#"
+              href="#products"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.1 }}

@@ -62,8 +62,6 @@ const AppContent: React.FC = () => {
         </Suspense>
       </main>
 
-      <Footer />
-
       {/* Overlays & Drawers */}
       <CartDrawer />
       <MobileMenu

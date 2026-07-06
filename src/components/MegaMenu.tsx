@@ -58,7 +58,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
           />
           {/* Menu Panel */}
           <motion.div
-            className="absolute top-full left-0 w-full bg-white shadow-2xl rounded-b-2xl z-40 border-t border-gray-100"
+            className="fixed top-[68px] left-0 right-0 bg-white shadow-2xl rounded-b-2xl z-40 border-t border-gray-100"
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
@@ -123,7 +123,7 @@ const MegaMenu: React.FC<MegaMenuProps> = ({ isOpen, onClose }) => {
                   <span>💳 Cash on Delivery Available</span>
                   <span>🔄 7-Day Replacement</span>
                 </div>
-                <a href="#" className="text-xs font-semibold text-indigo-600 hover:underline" onClick={onClose}>
+                <a href="#products" className="text-xs font-semibold text-indigo-600 hover:underline" onClick={onClose}>
                   View All Products →
                 </a>
               </div>
