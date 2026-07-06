@@ -39,11 +39,11 @@ const CategoryGrid: React.FC = () => {
               className="group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-shadow duration-300 block"
             >
               {/* Image Container */}
-              <div className="relative overflow-hidden h-40 sm:h-44 md:h-48 lg:h-52">
+              <div className="relative overflow-hidden aspect-[4/3] sm:aspect-[5/4]">
                 <img
                   src={cat.image}
                   alt={cat.name}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.08]"
+                  className="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-[1.08]"
                   loading="lazy"
                   decoding="async"
                 />

@@ -17,10 +17,10 @@ const Newsletter: React.FC = () => {
   return (
     <section className="py-14 sm:py-20 relative overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-indigo-800 to-slate-900" />
-      <div className="absolute inset-0 opacity-10"
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-950 via-amber-950 to-slate-950" />
+      <div className="absolute inset-0 opacity-15"
         style={{
-          backgroundImage: 'radial-gradient(circle at 20% 50%, #6366f1 0%, transparent 50%), radial-gradient(circle at 80% 20%, #f97316 0%, transparent 50%)',
+          backgroundImage: 'radial-gradient(circle at 20% 50%, rgba(245,158,11,0.25) 0%, transparent 50%), radial-gradient(circle at 80% 20%, rgba(15,23,42,0.3) 0%, transparent 50%)',
         }}
       />
 
@@ -32,18 +32,18 @@ const Newsletter: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           {/* Icon */}
-          <div className="w-16 h-16 bg-indigo-600/40 border border-indigo-500/50 rounded-2xl flex items-center justify-center mx-auto mb-5">
-            <Mail size={28} className="text-white" />
+          <div className="w-16 h-16 bg-amber-400/15 border border-amber-300/30 rounded-2xl flex items-center justify-center mx-auto mb-5">
+            <Mail size={28} className="text-amber-300" />
           </div>
 
           {/* Headline */}
-          <span className="text-indigo-300 font-semibold text-sm uppercase tracking-widest block mb-3">
+          <span className="text-amber-300 font-semibold text-sm uppercase tracking-widest block mb-3">
             Newsletter
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-black text-white mb-3">
             Get 10% Off Your First Order
           </h2>
-          <p className="text-indigo-200 text-sm sm:text-base mb-8 max-w-lg mx-auto">
+          <p className="text-slate-300 text-sm sm:text-base mb-8 max-w-lg mx-auto">
             Subscribe to our newsletter and be the first to know about new arrivals, exclusive deals, and flash sales. Unsubscribe anytime.
           </p>
 
@@ -55,7 +55,7 @@ const Newsletter: React.FC = () => {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Enter your email address"
               required
-              className="flex-1 px-4 py-3.5 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-white/60 text-sm backdrop-blur-sm"
+              className="flex-1 px-4 py-3.5 rounded-xl bg-slate-900/75 border border-slate-700 text-white placeholder-slate-400 focus:outline-none focus:border-amber-400/60 text-sm backdrop-blur-sm"
             />
             <motion.button
               type="submit"
@@ -83,10 +83,10 @@ const Newsletter: React.FC = () => {
           </p>
 
           {/* Trust signals */}
-          <div className="flex flex-wrap justify-center gap-4 mt-8 pt-8 border-t border-white/10">
+          <div className="flex flex-wrap justify-center gap-4 mt-8 pt-8 border-t border-amber-400/15">
             {['50,000+ Subscribers', 'Weekly Deals', 'Exclusive Offers', 'Easy Unsubscribe'].map(item => (
-              <span key={item} className="text-indigo-300 text-xs font-medium flex items-center gap-1">
-                <Check size={12} className="text-emerald-400" />
+              <span key={item} className="text-amber-200 text-xs font-medium flex items-center gap-1">
+                <Check size={12} className="text-amber-300" />
                 {item}
               </span>
             ))}

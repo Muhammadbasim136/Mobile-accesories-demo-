@@ -10,10 +10,10 @@ interface SearchOverlayProps {
 const trendingTags = ['Wireless Earbuds', 'Power Bank', 'GaN Charger', 'Phone Case', 'Bluetooth Speaker', 'Screen Protector', 'USB-C Cable', 'Smartwatch'];
 
 const popularProducts = [
-  { name: 'TT AirBeat Pro Earbuds', price: 3499, img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=80&q=80' },
-  { name: 'TT PowerMax 20000mAh', price: 4999, img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=80&q=80' },
-  { name: 'TT RapidCharge 65W GaN', price: 2799, img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=80&q=80' },
-  { name: 'TT BassBoom Speaker', price: 3999, img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=80&q=80' },
+  { name: 'TT AirBeat Pro Earbuds', price: 3499, img: '/images/cat-earbuds.jpg' },
+  { name: 'TT PowerMax 20000mAh', price: 4999, img: '/images/cat-powerbank.jpg' },
+  { name: 'TT RapidCharge 65W GaN', price: 2799, img: '/images/cat-chargers.jpg' },
+  { name: 'TT BassBoom Speaker', price: 3999, img: '/images/cat-speakers.jpg' },
 ];
 
 const SearchOverlay: React.FC<SearchOverlayProps> = ({ isOpen, onClose }) => {

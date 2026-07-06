@@ -14,9 +14,9 @@ const menuData = [
     color: 'text-indigo-600',
     bg: 'bg-indigo-50',
     items: [
-      { name: 'Wireless Earbuds', img: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=60&q=80', count: 24 },
-      { name: 'Bluetooth Speakers', img: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=60&q=80', count: 15 },
-      { name: 'Neckbands & IEM', img: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=60&q=80', count: 18 },
+      { name: 'Wireless Earbuds', img: '/images/cat-earbuds.jpg', count: 24 },
+      { name: 'Bluetooth Speakers', img: '/images/cat-speakers.jpg', count: 15 },
+      { name: 'Neckbands & IEM', img: '/images/cat-earbuds.jpg', count: 18 },
     ],
   },
   {
@@ -25,9 +25,9 @@ const menuData = [
     color: 'text-orange-500',
     bg: 'bg-orange-50',
     items: [
-      { name: 'Power Banks', img: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=60&q=80', count: 18 },
-      { name: 'Fast Chargers', img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=60&q=80', count: 20 },
-      { name: 'Cables & Adapters', img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=60&q=80', count: 32 },
+      { name: 'Power Banks', img: '/images/cat-powerbank.jpg', count: 18 },
+      { name: 'Fast Chargers', img: '/images/cat-chargers.jpg', count: 20 },
+      { name: 'Cables & Adapters', img: '/images/cat-chargers.jpg', count: 32 },
     ],
   },
   {
@@ -36,9 +36,9 @@ const menuData = [
     color: 'text-emerald-600',
     bg: 'bg-emerald-50',
     items: [
-      { name: 'Phone Cases', img: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=60&q=80', count: 56 },
-      { name: 'Screen Protectors', img: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=60&q=80', count: 28 },
-      { name: 'Car Mounts', img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=60&q=80', count: 20 },
+      { name: 'Phone Cases', img: '/images/cat-cases.jpg', count: 56 },
+      { name: 'Screen Protectors', img: '/images/cat-cases.jpg', count: 28 },
+      { name: 'Car Mounts', img: '/images/cat-chargers.jpg', count: 20 },
     ],
   },
 ];

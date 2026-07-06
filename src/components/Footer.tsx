@@ -4,7 +4,7 @@ import { MapPin, Phone, Mail, Globe2 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer id="footer" className="bg-slate-900 text-gray-300">
+    <footer id="footer" className="bg-slate-950 text-slate-300">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-4 py-12 sm:py-16">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10">
@@ -84,7 +84,7 @@ const Footer: React.FC = () => {
                     rel="noreferrer"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className={`w-9 h-9 bg-slate-800 ${social.color} text-gray-400 hover:text-white rounded-xl flex items-center justify-center transition-colors min-h-[36px] min-w-[36px]`}
+                    className={`w-9 h-9 bg-slate-800 ${social.color} text-amber-300 hover:text-white rounded-xl flex items-center justify-center transition-colors min-h-[36px] min-w-[36px]`}
                     aria-label={social.label}
                   >
                     <Icon />
@@ -95,15 +95,15 @@ const Footer: React.FC = () => {
 
             {/* Contact */}
             <div className="mt-5 space-y-2">
-              <a href="https://wa.me/923232255520" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-gray-400 hover:text-green-400 transition-colors">
-                <Phone size={14} className="text-green-500 flex-shrink-0" />
+              <a href="https://wa.me/923232255520" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-amber-200 hover:text-amber-300 transition-colors">
+                <Phone size={14} className="text-amber-300 flex-shrink-0" />
                 +92 323 2255520 (WhatsApp)
               </a>
-              <a href="mailto:support@techtrends.pk" className="flex items-center gap-2 text-sm text-gray-400 hover:text-amber-300 transition-colors">
+              <a href="mailto:support@techtrends.pk" className="flex items-center gap-2 text-sm text-amber-200 hover:text-amber-300 transition-colors">
                 <Mail size={14} className="text-amber-300 flex-shrink-0" />
                 support@techtrends.pk
               </a>
-              <div className="flex items-start gap-2 text-sm text-gray-400">
+              <div className="flex items-start gap-2 text-sm text-amber-200">
                 <MapPin size={14} className="text-amber-300 flex-shrink-0 mt-0.5" />
                 <span>Shop #129, West Point Tower, Phase 2 EXT, Karachi</span>
               </div>
@@ -125,9 +125,9 @@ const Footer: React.FC = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1"
+                    className="text-sm text-slate-400 hover:text-amber-300 transition-colors flex items-center gap-1"
                   >
-                    <span className="text-gray-600">›</span> {link.label}
+                    <span className="text-amber-300">›</span> {link.label}
                   </a>
                 </li>
               ))}
@@ -149,8 +149,8 @@ const Footer: React.FC = () => {
                 'Smartwatches',
               ].map(cat => (
                 <li key={cat}>
-                  <a href="#" className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1">
-                    <span className="text-gray-600">›</span> {cat}
+                  <a href="#" className="text-sm text-slate-400 hover:text-amber-300 transition-colors flex items-center gap-1">
+                    <span className="text-amber-300">›</span> {cat}
                   </a>
                 </li>
               ))}
@@ -170,8 +170,8 @@ const Footer: React.FC = () => {
                 'Cookie Policy',
               ].map(policy => (
                 <li key={policy}>
-                    <a href="#" className="text-sm text-gray-400 hover:text-amber-300 transition-colors flex items-center gap-1">
-                    <span className="text-gray-600">›</span> {policy}
+                    <a href="#" className="text-sm text-slate-400 hover:text-amber-300 transition-colors flex items-center gap-1">
+                    <span className="text-amber-300">›</span> {policy}
                   </a>
                 </li>
               ))}
@@ -194,7 +194,7 @@ const Footer: React.FC = () => {
         <div className="mt-10 pt-8 border-t border-slate-800">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
-              <p className="text-xs text-gray-500 mb-3 font-medium uppercase tracking-wider">Accepted Payment Methods</p>
+              <p className="text-xs text-amber-300 mb-3 font-medium uppercase tracking-wider">Accepted Payment Methods</p>
               <div className="flex flex-wrap gap-2">
                 {[
                   { label: 'COD', bg: 'bg-emerald-800/60', text: 'text-emerald-300', prefix: '💵' },
@@ -222,10 +222,10 @@ const Footer: React.FC = () => {
       {/* Copyright Bar */}
       <div className="border-t border-slate-800 bg-slate-950">
         <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-amber-300">
             © {new Date().getFullYear()} Tech-Trends Mobile Accessories. All rights reserved.
           </p>
-          <p className="text-xs text-gray-600">
+          <p className="text-xs text-slate-400">
             Made with ❤️ in Pakistan 🇵🇰
           </p>
         </div>

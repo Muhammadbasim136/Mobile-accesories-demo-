@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const banners = [
   {
     id: 1,
-    gradient: 'from-indigo-900 via-indigo-700 to-indigo-500',
+    gradient: 'from-slate-950 via-amber-800 to-slate-900',
     emoji: '⚡',
     tag: 'LIMITED OFFER',
     headline: 'SAVE 30–50%',
@@ -12,12 +12,12 @@ const banners = [
     description: 'Starting at Rs.2,499',
     note: 'Nationwide Cash on Delivery',
     cta: 'Shop Power Banks',
-    ctaStyle: 'bg-orange-500 hover:bg-orange-400 text-white',
-    pattern: 'radial-gradient(circle at 80% 20%, rgba(99,102,241,0.4) 0%, transparent 60%)',
+    ctaStyle: 'bg-amber-400 hover:bg-amber-300 text-slate-950',
+    pattern: 'radial-gradient(circle at 80% 20%, rgba(245,158,11,0.25) 0%, transparent 60%)',
   },
   {
     id: 2,
-    gradient: 'from-slate-900 via-slate-700 to-slate-600',
+    gradient: 'from-slate-950 via-slate-800 to-slate-700',
     emoji: '🔊',
     tag: 'EXPERIENCE AUDIO',
     headline: 'Stereo Sound',
@@ -25,14 +25,14 @@ const banners = [
     description: 'Starting at Rs.1,799',
     note: 'Premium Audio Quality',
     cta: 'Shop Speakers',
-    ctaStyle: 'bg-white text-slate-900 hover:bg-gray-100',
-    pattern: 'radial-gradient(circle at 20% 80%, rgba(251,146,60,0.3) 0%, transparent 60%)',
+    ctaStyle: 'bg-amber-400 hover:bg-amber-300 text-slate-950',
+    pattern: 'radial-gradient(circle at 20% 80%, rgba(245,158,11,0.2) 0%, transparent 60%)',
   },
 ];
 
 const PromoBanners: React.FC = () => {
   return (
-    <section className="py-14 sm:py-20 bg-gray-50">
+    <section className="py-14 sm:py-20 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
           {banners.map((banner, i) => (
@@ -46,8 +46,8 @@ const PromoBanners: React.FC = () => {
               style={{ backgroundImage: banner.pattern }}
             >
               {/* Decorative Circles */}
-              <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-white/5" />
-              <div className="absolute -bottom-12 -left-8 w-48 h-48 rounded-full bg-white/5" />
+              <div className="absolute -top-8 -right-8 w-32 h-32 rounded-full bg-amber-400/10" />
+              <div className="absolute -bottom-12 -left-8 w-48 h-48 rounded-full bg-amber-400/10" />
 
               <div className="relative z-10">
                 <div className="text-4xl mb-3">{banner.emoji}</div>
@@ -58,7 +58,7 @@ const PromoBanners: React.FC = () => {
                   {banner.headline}
                 </h3>
                 <p className="text-white/80 font-semibold text-lg mb-1">{banner.subheadline}</p>
-                <p className="text-orange-400 font-bold text-xl mb-1">{banner.description}</p>
+                <p className="text-amber-300 font-bold text-xl mb-1">{banner.description}</p>
                 <p className="text-white/50 text-xs mb-5">🚚 {banner.note}</p>
 
                 <motion.a

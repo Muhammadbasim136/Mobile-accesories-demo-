@@ -71,8 +71,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index = 0 }) => {
         <motion.img
           src={imgError ? product.image : (isHovered && product.image2 ? product.image2 : product.image)}
           alt={product.name}
-          className="w-full h-full object-cover"
-          animate={{ scale: isHovered ? 1.06 : 1 }}
+          className="w-full h-full object-contain object-center"
+          animate={{ scale: isHovered ? 1.03 : 1 }}
           transition={{ duration: 0.4 }}
           loading="lazy"
           decoding="async"

@@ -6,15 +6,15 @@ export const categories = [
   { id: 5, name: 'Bluetooth Speakers', count: 15, image: '/images/cat-speakers.jpg', slug: 'speakers' },
   {
     id: 6, name: 'Screen Protectors', count: 28,
-    image: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=400&q=80', slug: 'screen-protectors'
+    image: '/images/cat-cases.jpg', slug: 'screen-protectors'
   },
   {
     id: 7, name: 'Car Chargers & Mounts', count: 20,
-    image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80', slug: 'car-accessories'
+    image: '/images/cat-chargers.jpg', slug: 'car-accessories'
   },
   {
     id: 8, name: 'Smartwatches', count: 12,
-    image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=80', slug: 'smartwatches'
+    image: '/images/cat-speakers.jpg', slug: 'smartwatches'
   },
 ];
 
@@ -121,78 +121,78 @@ export const bestSelling = {
   earbuds: [
     {
       id: 201, name: 'TT AirBeat Pro Wireless Earbuds', price: 3499, originalPrice: 5299, discount: 34,
-      image: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1606220838315-056192d5e927?w=600&q=80',
+      image: '/images/cat-earbuds.jpg',
+      image2: '/images/hero-1.jpg',
       badge: 'BEST SELLER', colors: [],
     },
     {
       id: 202, name: 'TT NeckFit Pro Neckband', price: 1999, originalPrice: 2999, discount: 33,
-      image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80',
+      image: '/images/promo-earbuds.jpg',
+      image2: '/images/hero-3.jpg',
       badge: '33% OFF', colors: [],
     },
     {
       id: 203, name: 'TT Sport Buds IPX5 Waterproof', price: 2499, originalPrice: 3499, discount: 29,
-      image: 'https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=80',
+      image: '/images/hero-1.jpg',
+      image2: '/images/cat-earbuds.jpg',
       badge: 'NEW', colors: [],
     },
     {
       id: 204, name: 'TT Crystal Clear In-Ear Monitors', price: 1799, originalPrice: 2499, discount: 28,
-      image: 'https://images.unsplash.com/photo-1606220838315-056192d5e927?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80',
+      image: '/images/hero-3.jpg',
+      image2: '/images/promo-earbuds.jpg',
       badge: '28% OFF', colors: [],
     },
   ],
   powerbanks: [
     {
       id: 205, name: 'TT PowerMax 20000mAh Power Bank', price: 4999, originalPrice: 7499, discount: 33,
-      image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
+      image: '/images/cat-powerbank.jpg',
+      image2: '/images/promo-powerbank.jpg',
       badge: 'BEST SELLER', colors: [],
     },
     {
       id: 206, name: 'TT Compact 10000mAh Slim Bank', price: 2499, originalPrice: 3999, discount: 38,
-      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
+      image: '/images/hero-2.jpg',
+      image2: '/images/cat-chargers.jpg',
       badge: '38% OFF', colors: [],
     },
     {
       id: 207, name: 'TT MagPower 15W Wireless Bank', price: 5999, originalPrice: 8499, discount: 29,
-      image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
+      image: '/images/promo-powerbank.jpg',
+      image2: '/images/hero-2.jpg',
       badge: 'HOT', colors: [],
     },
     {
       id: 208, name: 'TT SolarBoost 30000mAh Bank', price: 7499, originalPrice: 10999, discount: 32,
-      image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
+      image: '/images/cat-chargers.jpg',
+      image2: '/images/cat-powerbank.jpg',
       badge: '32% OFF', colors: [],
     },
   ],
   speakers: [
     {
       id: 209, name: 'TT BassBoom Portable Speaker', price: 3999, originalPrice: 5999, discount: 33,
-      image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80',
+      image: '/images/cat-speakers.jpg',
+      image2: '/images/hero-3.jpg',
       badge: 'BEST SELLER', colors: [],
     },
     {
       id: 210, name: 'TT MiniBlast Pocket Speaker', price: 1799, originalPrice: 2599, discount: 31,
-      image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80',
+      image: '/images/hero-3.jpg',
+      image2: '/images/cat-speakers.jpg',
       badge: '31% OFF', colors: [],
     },
     {
       id: 211, name: 'TT HomeSurround 360° Speaker', price: 6999, originalPrice: 9999, discount: 30,
-      image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80',
+      image: '/images/promo-earbuds.jpg',
+      image2: '/images/cat-speakers.jpg',
       badge: 'PREMIUM', colors: [],
     },
     {
       id: 212, name: 'TT OutdoorRock Waterproof Speaker', price: 4499, originalPrice: 6499, discount: 31,
-      image: 'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=80',
-      image2: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=80',
+      image: '/images/hero-1.jpg',
+      image2: '/images/cat-speakers.jpg',
       badge: '31% OFF', colors: [],
     },
   ],
@@ -201,26 +201,26 @@ export const bestSelling = {
 export const newArrivals = [
   {
     id: 301, name: 'TT Orbit MagSafe Charging Stand', price: 3499, originalPrice: 4999, discount: 30,
-    image: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
-    image2: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
+    image: '/images/hero-2.jpg',
+    image2: '/images/cat-powerbank.jpg',
     badge: 'NEW', colors: [],
   },
   {
     id: 302, name: 'TT Stealth Matte Case', price: 1499, originalPrice: 1999, discount: 25,
-    image: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=600&q=80',
-    image2: 'https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=600&q=80',
+    image: '/images/cat-cases.jpg',
+    image2: '/images/hero-3.jpg',
     badge: 'NEW', colors: ['#1a1a2e', '#6b7280', '#e5e7eb'],
   },
   {
     id: 303, name: 'TT AirFlow ANC Neckband', price: 2999, originalPrice: 4499, discount: 33,
-    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=600&q=80',
-    image2: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?w=600&q=80',
+    image: '/images/cat-earbuds.jpg',
+    image2: '/images/cat-speakers.jpg',
     badge: 'NEW', colors: [],
   },
   {
     id: 304, name: 'TT Compact 10000mAh Power Bank', price: 2499, originalPrice: 3999, discount: 38,
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=80',
-    image2: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
+    image: '/images/cat-powerbank.jpg',
+    image2: '/images/cat-chargers.jpg',
     badge: 'NEW', colors: [],
   },
 ];
